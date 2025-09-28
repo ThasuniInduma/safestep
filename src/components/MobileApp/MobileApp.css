@@ -1,7 +1,8 @@
+/* Main container */
 .mobile-app-container {
   position: relative;
   background: linear-gradient(135deg, #8037e0 0%, #ddc8f3 100%);
-  padding: 80px 80px;
+  padding: 80px 60px;
   border-radius: 32px;
   overflow: hidden;
   max-width: 1200px;
@@ -15,69 +16,23 @@
 }
 
 .mobile-app-container:hover {
-  transform: translateY(-15px) scale(1.02);
+  transform: translateY(-10px) scale(1.02);
   box-shadow: 0 40px 80px rgba(148, 102, 234, 0.4);
-  background: linear-gradient(135deg, #8037e0 0%, #ddc8f3 100%);
 }
 
-.mobile-app-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
-  pointer-events: none;
-}
-
-/* Modern decorative elements */
-.modern-decoration {
+/* Decorative dots */
+.dot {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.6s ease;
+  opacity: 0.3;
 }
 
-.decoration-1 {
-  width: 120px;
-  height: 120px;
-  top: -60px;
-  right: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
-}
+.dot-purple-top { top: -20px; left: 50px; width: 100px; height: 100px; background: #b47ff4; }
+.dot-green-right { top: 80px; right: -30px; width: 60px; height: 60px; background: #4ade80; }
+.dot-orange-left { bottom: 50px; left: -20px; width: 70px; height: 70px; background: #f59e0b; }
+.dot-blue-bottom { bottom: -30px; right: 60px; width: 90px; height: 90px; background: #3b82f6; }
 
-.decoration-2 {
-  width: 200px;
-  height: 200px;
-  bottom: -100px;
-  left: -50px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
-}
-
-.decoration-3 {
-  width: 80px;
-  height: 80px;
-  top: 50%;
-  right: -40px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
-}
-
-.mobile-app-container:hover .modern-decoration {
-  transform: scale(1.1) rotate(10deg);
-}
-
-.mobile-app-container:hover .decoration-1 {
-  transform: scale(1.2) rotate(-15deg);
-}
-
-.mobile-app-container:hover .decoration-2 {
-  transform: scale(1.15) rotate(20deg);
-}
-
-/* Main content wrapper */
+/* Content wrapper */
 .content-wrapper {
   display: flex;
   align-items: center;
@@ -86,7 +41,7 @@
   z-index: 2;
 }
 
-/* Text content section */
+/* Text content */
 .text-content {
   flex: 1;
   max-width: 500px;
@@ -100,7 +55,6 @@
 .main-title {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #ffffff;
   line-height: 1.1;
   margin-bottom: 24px;
   background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
@@ -114,21 +68,16 @@
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.7;
   margin-bottom: 35px;
-  font-weight: 400;
 }
 
-/* Features list */
-.features-list {
-  margin-bottom: 40px;
-}
-
+/* Features */
+.features-list { margin-bottom: 40px; }
 .feature-item {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
 }
-
 .feature-number {
   background: linear-gradient(135deg, #281a3d 0%, #c657fe 100%);
   color: white;
@@ -143,298 +92,60 @@
   box-shadow: 0 4px 12px rgba(154, 107, 255, 0.3);
   transition: all 0.3s ease;
 }
-
 .mobile-app-container:hover .feature-number {
   transform: scale(1.1);
   box-shadow: 0 6px 20px rgba(156, 107, 255, 0.4);
 }
-
-.feature-text {
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: 600;
-  font-size: 1rem;
-}
+.feature-text { color: rgba(255,255,255,0.95); font-weight: 600; font-size: 1rem; }
 
 /* Download buttons */
-.download-buttons {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
+.download-buttons { display: flex; gap: 20px; flex-wrap: wrap; }
 .download-btn {
   display: block;
   height: 50px;
-  transition: all 0.3s ease;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+  transition: all 0.3s ease;
 }
-
-.download-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.download-btn:hover::before {
-  opacity: 1;
-}
-
 .download-btn:hover {
-  transform: translateY(-4px) scale(1.05);
+  transform: translateY(-3px) scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-
-.download-btn img {
-  height: 100%;
-  width: auto;
-}
+.download-btn img { height: 100%; width: auto; }
 
 /* Phones container */
 .phones-container {
+  flex: 1;
   position: relative;
-  flex: 1;
-  height: 400px;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-/* Phone mockups */
-.phone-mockup {
-  position: absolute;
-  width: 180px;
-  height: 360px;
-  background: linear-gradient(145deg, #2d3748 0%, #1a202c 100%);
-  border-radius: 28px;
-  padding: 8px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.mobile-app-container:hover .phone-mockup {
-  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-.phone-back {
-  transform: rotate(-15deg) translateX(-20px);
-  z-index: 1;
-}
-
-.mobile-app-container:hover .phone-back {
-  transform: rotate(-18deg) translateX(-25px) translateY(-8px);
-}
-
-.phone-front {
-  transform: rotate(10deg) translateX(20px);
-  z-index: 2;
-}
-
-.mobile-app-container:hover .phone-front {
-  transform: rotate(12deg) translateX(25px) translateY(-8px);
-}
-
-.phone-screen {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 100%);
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Screen header */
-.screen-header {
-  background: white;
-  padding: 8px 15px 0;
-}
-
-.status-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.battery-wifi {
-  display: flex;
-  gap: 4px;
   align-items: center;
 }
 
-.app-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e5e7eb;
-}
 
-.app-header.blue-header {
-  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
-  color: white;
-  margin: 0 -15px;
-  padding: 12px 15px;
-  border-bottom: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.back-arrow {
-  font-size: 1.2rem;
-  color: #4c4f83;
-}
-
-.header-title {
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: #1f2937;
-}
-
-.blue-header .header-title {
-  color: white;
-}
-
-.profile-icon {
-  font-size: 1.1rem;
-}
-
-/* Screen content */
-.screen-content {
-  flex: 1;
-  padding: 20px 15px;
-  background: #f9fafb;
-}
-
-.screen-content.blue-content {
-  background: #dbeafe;
-}
-
-/* Profile section (back phone) */
-.profile-section {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 25px;
-}
-
-.profile-avatar {
-  width: 40px;
-  height: 40px;
-  background: #d1d5db;
-  border-radius: 50%;
-}
-
-.profile-info {
-  flex: 1;
-}
-
-.profile-name {
-  height: 8px;
-  background: #6b7280;
-  border-radius: 4px;
-  margin-bottom: 6px;
-  width: 80px;
-}
-
-.profile-details {
-  height: 6px;
-  background: #d1d5db;
-  border-radius: 3px;
-  width: 60px;
-}
-
-/* Menu items (back phone) */
-.menu-items {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.menu-item {
-  height: 12px;
-  background: #e5e7eb;
-  border-radius: 6px;
-}
-
-.menu-item:nth-child(1) { width: 90%; }
-.menu-item:nth-child(2) { width: 75%; }
-.menu-item:nth-child(3) { width: 85%; }
-.menu-item:nth-child(4) { width: 70%; }
-
-/* Dashboard grid (front phone) */
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.grid-item {
-  aspect-ratio: 1;
-  background: white;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px;
+  .phone {
+    width: 220px;
   }
-  
-  .main-title {
-    font-size: 2rem;
+}
+@media (max-width: 480px) {
+  .phone {
+    width: 180px;
   }
-  
-  .phones-container {
-    height: 300px;
-  }
-  
-  .phone-mockup {
-    width: 140px;
-    height: 280px;
-  }
-  
-  .phone-back {
-    transform: rotate(-10deg) translateX(-15px);
-  }
-  
-  .phone-front {
-    transform: rotate(8deg) translateX(15px);
-  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper { flex-direction: column; text-align: center; gap: 40px; }
+  .main-title { font-size: 2rem; }
+  .phones-container img { width: 180px; }
 }
 
 @media (max-width: 480px) {
-  .mobile-app-container {
-    padding: 40px 15px;
-  }
-  
-  .main-title {
-    font-size: 1.75rem;
-  }
-  
-  .download-buttons {
-    justify-content: center;
-  }
+  .mobile-app-container { padding: 40px 20px; }
+  .main-title { font-size: 1.75rem; }
+  .download-buttons { justify-content: center; }
 }

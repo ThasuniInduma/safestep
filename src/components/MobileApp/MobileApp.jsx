@@ -1,5 +1,6 @@
 import React from 'react';
 import './MobileApp.css';
+import { assets } from '../../assets/assets';
 
 const MobileApp = () => {
   return (
@@ -52,72 +53,8 @@ const MobileApp = () => {
         </div>
         
         {/* Right side - Phone mockups */}
-        <div className="phones-container">
-          <div className="phone-mockup phone-back">
-            <div className="phone-screen">
-              <div className="screen-header">
-                <div className="status-bar">
-                  <span>9:41</span>
-                  <div className="battery-wifi">
-                    <span>●●●</span>
-                    <span>📶</span>
-                    <span>🔋</span>
-                  </div>
-                </div>
-                <div className="app-header">
-                  <span className="back-arrow">←</span>
-                  <span className="header-title">Health App</span>
-                </div>
-              </div>
-              <div className="screen-content">
-                <div className="profile-section">
-                  <div className="profile-avatar"></div>
-                  <div className="profile-info">
-                    <div className="profile-name"></div>
-                    <div className="profile-details"></div>
-                  </div>
-                </div>
-                <div className="menu-items">
-                  <div className="menu-item"></div>
-                  <div className="menu-item"></div>
-                  <div className="menu-item"></div>
-                  <div className="menu-item"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="phone-mockup phone-front">
-            <div className="phone-screen">
-              <div className="screen-header">
-                <div className="status-bar">
-                  <span>9:41</span>
-                  <div className="battery-wifi">
-                    <span>●●●</span>
-                    <span>📶</span>
-                    <span>🔋</span>
-                  </div>
-                </div>
-                <div className="app-header blue-header">
-                  <span className="header-title">Dashboard</span>
-                  <span className="profile-icon">👤</span>
-                </div>
-              </div>
-              <div className="screen-content blue-content">
-                <div className="dashboard-grid">
-                  <div className="grid-item">🏠</div>
-                  <div className="grid-item">💊</div>
-                  <div className="grid-item">📋</div>
-                  <div className="grid-item">⚕️</div>
-                  <div className="grid-item">📞</div>
-                  <div className="grid-item">🔍</div>
-                  <div className="grid-item">⚙️</div>
-                  <div className="grid-item">❤️</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img src={assets.img5} alt="iPhones Mockup" style={{ width: '550px', height: '600px', borderRadius: '32px' }} />
+
       </div>
     </div>
   );
