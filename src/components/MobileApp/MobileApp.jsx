@@ -53,7 +53,8 @@ const MobileApp = () => {
         </div>
         
         {/* Right side - Phone mockups */}
-        <img src={assets.img5} alt="iPhones Mockup" style={{ width: '550px', height: '600px', borderRadius: '32px' }} />
+        <img src={assets.img5} alt="iPhones Mockup" style={{ width: '450px', height: 'auto', borderRadius: '32px' }} />
+
 
       </div>
     </div>

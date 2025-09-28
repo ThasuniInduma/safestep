@@ -1,5 +1,6 @@
 import React from 'react';
-import './Services.css';
+import "./Services.css"
+import { assets } from '../../assets/assets';
 
 const Services = () => {
   const servicesData = [
@@ -90,6 +91,23 @@ const Services = () => {
           ))}
         </div>
       </div>
+
+      {/* Watch Section */}
+      <div className="watch-section">
+        <div className="watch-container">
+          <div className="watch-content">
+            <div className="watch-text">
+              <div className="app-logo">
+                <img src={assets.safestep} alt="" style={{ width: '500px', height: 'auto', borderRadius: '32px' }}/>
+              </div>
+              <h3 style={{padding: '0px 80px', width: '5000px', height: 'auto', borderRadius: '32px' }} className="watch-title">on<br />Smart Watch</h3>
+              
+            </div>
+            <img src={assets.img6}alt="iPhones Mockup" style={{ width: '250px', height: 'auto', borderRadius: '32px' }} />
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };

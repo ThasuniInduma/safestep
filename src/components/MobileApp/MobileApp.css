@@ -28,9 +28,9 @@
 }
 
 .dot-purple-top { top: -20px; left: 50px; width: 100px; height: 100px; background: #b47ff4; }
-.dot-green-right { top: 80px; right: -30px; width: 60px; height: 60px; background: #4ade80; }
-.dot-orange-left { bottom: 50px; left: -20px; width: 70px; height: 70px; background: #f59e0b; }
-.dot-blue-bottom { bottom: -30px; right: 60px; width: 90px; height: 90px; background: #3b82f6; }
+.dot-green-right { top: 80px; right: -30px; width: 60px; height: 60px; background: #b47ff4; }
+.dot-orange-left { bottom: 50px; left: -20px; width: 70px; height: 70px; background: #b47ff4; }
+.dot-blue-bottom { bottom: -30px; right: 60px; width: 90px; height: 90px; background: #b47ff4; }
 
 /* Content wrapper */
 .content-wrapper {
