@@ -2,7 +2,7 @@
 .hero-bg {
     min-height: 85vh;
     width: 100vw;
-    background: linear-gradient(90deg, #ddc8f3 0%, #8037e0 100%);
+    background: linear-gradient(90deg, #fefeff 0%, #8037e0 100%);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -31,9 +31,7 @@
     font-size: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
-    background: linear-gradient(to right, #8b46a1, #5e50a0); /* gradient background */
-  -webkit-background-clip: text;   /* clip background to text */
-  -webkit-text-fill-color: transparent;
+    color: #5e2990;
     line-height: 1.1;
 }
 .header2 {

@@ -36,10 +36,12 @@
 
   /* Gradient Text Effect */
   background: linear-gradient(to right, var(--primary-purple), var(--secondary-teal));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--primary-purple); /* Fallback */
+  background-clip: text;
+  -webkit-background-clip: text;   /* Safari/Chrome */
+  color: transparent;              /* Make sure text becomes see-through */
+  -webkit-text-fill-color: transparent; /* Safari fix */
 }
+
 
 .title-underline {
   position: absolute;
