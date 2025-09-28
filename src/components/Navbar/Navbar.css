@@ -3,11 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #e0d5e7 0%, #a259e6 100%);
+    background: linear-gradient(90deg, #ddc8f3 0%, #8037e0 100%);
     position: relative;
     z-index: 2;
     box-shadow: 0 2px 8px rgba(162,89,230,0.05);
     backdrop-filter: blur(2px);
+    width: 100%;
+    box-sizing: border-box;
 }
 .navbar-transparent {
     background: transparent !important;
@@ -36,7 +38,7 @@
 
 @media (max-width:1050px){
     .navbar {
-        padding: 10px 10px;
+        padding: 0px 0px;
     }
     .navbar .logo{
         width: 200px;
