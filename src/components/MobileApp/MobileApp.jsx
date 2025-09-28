@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets';
 
 const MobileApp = () => {
   return (
-    <div className="mobile-app-container">
+    <div className="mobile-app-container" id='mobile'>
       {/* Decorative dots */}
       <div className="dot dot-purple-top"></div>
       <div className="dot dot-green-right"></div>

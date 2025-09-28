@@ -4,7 +4,7 @@ import { assets } from '../../assets/assets';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id='footer'>
       <div className="footer-container">
         <div className="footer-content">
           {/* Brand Section */}
