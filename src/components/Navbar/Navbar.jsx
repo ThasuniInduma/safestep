@@ -13,9 +13,10 @@ const Navbar = () => {
             </Link>
             <ul className='navbar-menu'>
                 <Link>Home</Link>
-                <a href='#about'>About</a>
-                <a href='#app-download'>mobile app</a>
-                <a href='#footer' >contact us</a>
+                <a href='#how'>How it Works</a>
+                <a href='#mobile'>App Download</a>
+                <a href='#about'>Services</a>
+                <a href='#footer'>Contact Us</a>
             </ul>
         </div>
     )

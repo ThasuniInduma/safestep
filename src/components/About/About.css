@@ -1,0 +1,183 @@
+/* --- Variables --- */
+:root {
+  --primary-purple: #5b50e6;
+  --secondary-teal: #6dacec;
+  --text-dark: #333;
+  --text-light: #666;
+  --background-light: #f9f9f9;
+  --border-color: #e5e7eb;
+}
+
+/* --- Global / Layout --- */
+.about-section {
+  padding: 50px 20px;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* --- Header --- */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+
+  /* Gradient Text Effect */
+  background: linear-gradient(to right, var(--primary-purple), var(--secondary-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--primary-purple); /* Fallback */
+}
+
+.title-underline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  border-radius: 4px;
+  background: linear-gradient(to right, var(--secondary-teal), var(--primary-purple));
+  bottom: -10px;
+}
+
+.subtitle {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+/* --- Steps Grid --- */
+.steps-grid {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* --- Step Card --- */
+.step-card {
+  flex: 1;
+  padding: 20px 40px;
+  position: relative;
+  display: flex;
+}
+
+.step-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.step-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-purple);
+  margin-right: 15px;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--background-light);
+  border: 1px solid var(--primary-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-purple);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-purple);
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* --- Divider --- */
+.divider-line {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100px;
+  width: 1px;
+  background-color: var(--border-color);
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+  .steps-grid {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .step-card {
+    padding: 20px 0;
+  }
+
+  .step-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-text {
+    text-align: center;
+  }
+
+  .step-header {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .divider-line {
+    display: block;
+    position: static;
+    transform: none;
+    width: 80%;
+    height: 1px;
+    margin: 30px auto 0;
+    border-bottom: 1px solid var(--border-color);
+    background: none;
+  }
+
+  .step-card:last-child .divider-line {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .step-card:not(:last-child) .divider-line {
+    display: block;
+  }
+}

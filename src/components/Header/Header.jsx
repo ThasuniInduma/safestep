@@ -1,18 +1,20 @@
 import React from 'react';
 import './Header.css';
 import HomeImg from '../../assets/Home.png';
+import { assets } from '../../assets/assets';
 
 const Header = () => {
   return (
     <div className='hero-bg'>
       <div className='hero-content'>
         <div className='hero-left'>
-          <h2>SafeStep<br/>asjhfsegtuxermxr</h2>
-          <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
+          <h2 className='header1'>SafeStep</h2>
+          <h2 className='header2'>" Stay Fearless, live free "</h2>
+          <p>SafeStep is a smart safety app designed for women in Sri Lanka. With features like offline SOS, live location sharing, fake call simulation, and AI-powered risk detection, SafeStep acts like a guardian angel that is always with you. Built on reliable mSpace APIs, it helps women stay safe, connected, and confident  anytime, anywhere.</p>
           <button>Download</button>
         </div>
         <div className='hero-right'>
-          <img src={HomeImg} alt="Phone" className='hero-img' />
+          <img src={assets.img4} alt="Phone" className='hero-img' />
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #fff 0%, #a259e6 100%);
+    background: linear-gradient(90deg, #e0d5e7 0%, #a259e6 100%);
     position: relative;
     z-index: 2;
     box-shadow: 0 2px 8px rgba(162,89,230,0.05);
@@ -14,7 +14,7 @@
     box-shadow: none !important;
 }
 .navbar .logo{
-    width: 150px;
+    width: 250px;
 }
 .logo-text {
     font-size: 20px;
@@ -23,15 +23,15 @@
 .navbar-menu{
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 40px;
     color: #ffffff;
     font-size: 18px;
 }
 
 .navbar .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
-    color: black;
+    border-bottom: 2px solid #a259e6;
+    color: #a259e6;
 }
 
 @media (max-width:1050px){
