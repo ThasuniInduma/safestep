@@ -69,13 +69,14 @@ const About = () => {
             width="100%"
             style={{ maxWidth: '800px' }}
             height="450"
-            src="https://www.youtube.com/embed/Ru54qU0_emc"
+            src="https://www.youtube.com/embed/9OXSl0eOqj8"
             title="SafeStep Introduction Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
+
       </div>
     </div>
   );
