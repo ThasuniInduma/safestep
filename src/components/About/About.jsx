@@ -11,7 +11,7 @@ const About = () => {
         </svg>
       ),
       title: 'Open the App',
-      description: 'Launch SafeStep with a single tap or voice command. The app is always ready when you need it most.',
+      description: 'Launch SafeStep with a single tap. The app is always ready when you need it most.',
     },
     {
       number: '02',
