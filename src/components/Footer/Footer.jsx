@@ -72,7 +72,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <p>© 2024 SafeStep. All rights reserved. Empowering women, one step at a time.</p>
+            <p>© 2025 SafeStep. All rights reserved. Empowering women, one step at a time.</p>
           </div>
           <div className="footer-legal">
             <a href="#privacy" className="legal-link">Privacy Policy</a>

@@ -21,7 +21,7 @@ const About = () => {
         </svg>
       ),
       title: 'Activate SOS',
-      description: 'Press the emergency button or say your voice command. Your location and alert are instantly transmitted.',
+      description: 'Press the emergency button. Your location and alert are instantly transmitted.',
     },
     {
       number: '03',

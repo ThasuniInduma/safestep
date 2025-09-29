@@ -10,8 +10,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5l-6.928-12c-.77-.833-1.732-.833-2.5 0l-6.928 12c-.77.833.192 2.5 1.768 2.5z" />
         </svg>
       ),
-      title: 'One-Tap SOS & Voice Activation',
-      description: 'Instantly notify emergency contacts and authorities with a single tap or voice command. Quick, reliable, and potentially life-saving.',
+      title: 'One-Tap SOS',
+      description: 'Instantly notify emergency contacts and authorities with a single tap. Quick, reliable, and potentially life-saving.',
       iconColor: '#8b5cf6'
     },
     {
@@ -42,8 +42,8 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       ),
-      title: 'Nearby Police & Safe Zones Finder',
-      description: 'Find the nearest police stations, hospitals, and safe zones in your area. Navigate to safety when you need it most.',
+      title: 'Danger Zones Finder',
+      description: 'Find the danger zones in your area. Navigate to safety when you need it most.',
       iconColor: '#10b981'
     },
     {
@@ -98,12 +98,29 @@ const Services = () => {
           <div className="watch-content">
             <div className="watch-text">
               <div className="app-logo">
-                <img src={assets.safestep} alt="" style={{ width: '500px', height: 'auto', borderRadius: '32px' }}/>
+                <img 
+                  src={assets.safestep} 
+                  alt="SafeStep Logo" 
+                  style={{ width: '400px', height: 'auto', borderRadius: '24px' }}
+                />
               </div>
-              <h3 style={{padding: '0px 80px', width: '5000px', height: 'auto', borderRadius: '32px' }} className="watch-title">on<br />Smart Watch</h3>
-              
+              <h2 className="watch-title">On Smart Watch</h2>
+              <div className="coming-soon-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                  <polyline points="12 6 12 12 16 14" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                Coming Soon...
+              </div>
             </div>
-            <img src={assets.img6}alt="iPhones Mockup" style={{ width: '250px', height: 'auto', borderRadius: '32px' }} />
+            <div className="watch-image-container">
+              <div className="watch-glow"></div>
+              <img 
+                src={assets.img6} 
+                alt="Smart Watch" 
+                style={{ width: '280px', height: 'auto', borderRadius: '32px' }} 
+              />
+            </div>
           </div>
         </div>
       </div>
