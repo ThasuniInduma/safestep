@@ -289,7 +289,6 @@
 
 .watch-title {
   margin-top: -30px;
-  margin-left: 40px;
   font-size: 5rem;
   font-weight: 900;
   background: linear-gradient(135deg, #8037e0 0%, #bb76c1 50%, #8b5cf6 100%);
@@ -311,7 +310,6 @@
 }
 
 .coming-soon-badge {
-  margin-left: 40px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -377,7 +375,6 @@
 }
 
 .watch-image-container {
-  margin-right: 40px;
   position: relative;
   flex-shrink: 0;
   animation: floatWatch 4s ease-in-out infinite;
