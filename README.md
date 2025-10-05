@@ -19,7 +19,7 @@
 
 ---
 
-## 💻 Tech Stack
+## 🛠 Tech Stack
 
 **React.js + Vite + CSS3** – modern frontend framework and build tool with styling.
 
@@ -32,7 +32,7 @@
 
 ---
 
-## 📲 Screenshots
+## 💻 Screenshots
 <table>
   <tr>
     <td>
