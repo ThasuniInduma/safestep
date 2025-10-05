@@ -2,7 +2,7 @@
 
 > **Empowering Women with Real-Time Protection, Safety, and Support.**
 
-![SafeStep Banner](https://github.com/ThasuniInduma/safestep/tree/master/images/safestep_logo.png)
+![SafeStep Banner](images/safestep_logo.png)
 
 ---
 
