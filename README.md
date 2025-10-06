@@ -72,7 +72,6 @@
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/ThasuniInduma/safestep.git
-   cd safestep-web
    ```
 2. **Install Dependencies**
    ```bash
