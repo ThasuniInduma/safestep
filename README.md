@@ -27,6 +27,8 @@
 
 ## 📡 Links
 
+- **SafeStep Introduction Web**: [https://safestep-app.netlify.app](https://safestep-app.netlify.app)
+ 
 - **SafeStep Mobile App GitHub**: [https://github.com/budd9442/SafeStep](https://github.com/budd9442/SafeStep)  
 - **Demo Video on YouTube**: [https://www.youtube.com/embed/9OXSl0eOqj8](https://www.youtube.com/embed/9OXSl0eOqj8)  
 
@@ -82,6 +84,9 @@
    npm run dev
    ```
 4. **Deploy on Netlify**
+   ```bash
+   https://safestep-app.netlify.app
+   ```
 
 ---
 
